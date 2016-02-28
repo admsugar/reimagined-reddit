@@ -1,0 +1,210 @@
+﻿* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+.packery {
+    margin: 0 auto;
+}
+
+/* clearfix */
+.packery:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+
+/*grid item 1*/
+
+.item1 {
+  padding: 5px;
+  width: 250px;
+  height: 250px;
+   -webkit-filter: saturate(1); 
+    filter: saturate(1); 
+}
+
+.item-content1 {
+    color: transparent;
+
+  line-height: 25px;
+      /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+
+    text-align: center;
+    font-weight: bold;
+    padding: 50px;
+
+  width:  100%;
+  height: 100%;
+  background-size: 100% 100%;
+      border:3px solid #021a40;
+
+  -webkit-transition: width 0.4s, height 0.4s, background-color .5s, line-height 0.4s;
+     -moz-transition: width 0.4s, height 0.4s, background-color .5s, line-height 0.4s;
+       -o-transition: width 0.4s, height 0.4s, background-color .5s, line-height 0.4s;
+          transition: width 0.4s, height 0.4s, background-color .5s, line-height 0.4s;
+
+  background-color: transparent;
+  background-blend-mode: color-burn;
+}
+
+.item1.is-expanded {
+  width: 375px;
+  height: 400px;
+}
+
+.item1:hover { 
+    cursor: pointer;
+}
+
+.item1:hover .item-content1 {
+    line-height: 17.5px;
+}
+
+
+.item1.is-expanded {
+  z-index: 2;
+}
+
+.item1.is-expanded .item-content1 {
+  
+}
+
+.item1.is-viewed {
+    -webkit-filter: sepia(1) hue-rotate(200deg);
+    filter: sepia(1) hue-rotate(200deg);
+}
+
+/*grid item 2*/
+
+
+.item2 {
+  padding: 5px;
+  width: 500px;
+  height: 250px;
+   -webkit-filter: saturate(1); 
+    filter: saturate(1); 
+}
+
+.item-content2 {
+    color: transparent;
+    font-weight: bold;
+  padding: 50px;
+    text-align: center;
+  width:  100%;
+  height: 100%;
+    line-height: 25px;
+
+  background-size: 100% 100%;
+  border:3px solid #021a40;
+
+  -webkit-transition: width 0.4s, height 0.4s, background-color .5s, line-height 0.4s;
+     -moz-transition: width 0.4s, height 0.4s, background-color .5s, line-height 0.4s;
+       -o-transition: width 0.4s, height 0.4s, background-color .5s, line-height 0.4s;
+          transition: width 0.4s, height 0.4s, background-color .5s, line-height 0.4s;
+
+  
+  background-color: transparent;
+  background-blend-mode: color-burn;
+
+}
+
+/* item has expanded size */
+.item2.is-expanded {
+  width: 375px;
+  height: 400px;
+}
+
+.item2:hover { 
+    cursor: pointer; 
+}
+
+.item2:hover .item-content2 {
+    /*background-color: white;*/
+        line-height: 17.5px;
+        font-weight: bold;
+}
+
+.item2.is-expanded {
+  z-index: 2;
+}
+
+.item2.is-expanded .item-content2 {
+  
+}
+
+.item2.is-viewed {
+    -webkit-filter: sepia(1) hue-rotate(200deg);
+    filter: sepia(1) hue-rotate(200deg);
+}
+
+
+/*grid item 3*/
+
+.item3 {
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+   -webkit-filter: saturate(1); 
+    filter: saturate(1); 
+}
+
+.item-content3 {
+    color: transparent;
+    font-weight: bold;
+    padding: 50px;
+    text-align: center;
+      line-height: 25px;
+
+  width:  100%;
+  height: 100%;
+  background-size: 100% 100%;
+    border:3px solid #021a40;
+
+   -webkit-transition: width 0.4s, height 0.4s, background-color .5s, line-height 0.4s;
+     -moz-transition: width 0.4s, height 0.4s, background-color .5s, line-height 0.4s;
+       -o-transition: width 0.4s, height 0.4s, background-color .5s, line-height 0.4s;
+          transition: width 0.4s, height 0.4s, background-color .5s, line-height 0.4s;
+        
+  background-color: transparent;
+  background-blend-mode: color-burn;
+       
+}
+
+/* item has expanded size */
+.item3.is-expanded {
+   width: 375px;
+  height: 400px;
+}
+
+.item3:hover { 
+    cursor: pointer;
+}
+
+.item3:hover .item-content3 {
+    /*background-color: white;*/
+        line-height: 17.5px;
+
+}
+
+.item3.is-expanded {
+  z-index: 2;
+}
+
+.item3.is-expanded .item-content3 {
+  
+}
+
+.item3.is-viewed {
+    -webkit-filter: sepia(1) hue-rotate(200deg);
+    filter: sepia(1) hue-rotate(200deg);
+}
+
+
+.gif:hover {
+   text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+}
